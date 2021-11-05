@@ -7,7 +7,89 @@
     <title>Figuras Geométricas</title>
 </head>
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Ejercicio del curso practico de JS</p>
+    </header>
+
+    <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
+            </label>
+
+            <input id="InputCuadrado" type="number"> <!-- Indicamos que el input que el usuario debe ingresar solo pueden ser números -->
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular perímetro
+            </button>
+
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula el área y perímetro de un triángulo</h2>
+
+        <form>
+            <label for="InputTriangulo">
+                Escribe cuánto miden los lados de tu triángulo:
+            </label>
+
+            <input id="InputTriangulo" type="number">
+
+            <br>
+
+            <label for="InputTriangulo2">
+                Escribe cuánto mide la base de tu triángulo:
+            </label>
+
+            <input id="InputTriangulo2" type="number">
+
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular perímetros
+            </button>
+
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular el área
+            </button>
+
+            <button type="button" onclick="calcularAlturaTriangulo()">
+                Calcular la altura
+            </button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula el área y perímetro de un círculo</h2>
+
+        <form>
+            <label for="InputCirculo">
+                Escribe cuánto mide el radio de tu cículo:
+            </label>
+
+            <input id="InputCirculo" type="number"> <!-- Indicamos que el input que el usuario debe ingresar solo pueden ser números -->
+
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular perímetros
+            </button>
+
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el área
+            </button>
+
+        </form>
+    </section>
+
+
+
+
 
 
 
