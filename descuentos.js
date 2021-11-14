@@ -15,7 +15,7 @@
 
 //Solución #3: arrays y condicionales mucho más inteligentes
 
-const coupons = [
+const coupons = [ // Creamos la variable que contiene los objetos con los cupones, sus nombres y sus respectivos valores
     {
         name: "CiberLunes",
         discount: 15,
@@ -54,15 +54,15 @@ function buttonPriceDiscount(){ // Función para conectar el botón creado en HT
     //"error-first" es un patrón de programación donde atrapamos los errores antes de escribir el resto de la lógica de nuestros programas.
 
 
-    const isCouponValueValid = function (coupon) {
+    const isCouponValueValid = function (coupon) { //Validamos la opción escrita por el usuario a través de esta variable
         return coupon.name === couponValue;
     };
     
-    const userCoupon = coupons.find(isCouponValueValid);
+    const userCoupon = coupons.find(isCouponValueValid); // Con esta variable encontramos el dto almacenado en la función "isCouponValueValid" y validamos si ertenece o no al array creado anteriormente 
     
-    if (!userCoupon) {
+    if (!userCoupon) { // Con este ciclo se validan las opciones escritas por el usuario para fijar el valos de descuento y realizar la operación matematica con las funciones creadas anteriormente
         alert("El cupón " + couponValue + " no es válido");
-    } else {
+    } else { // Si el cupon ingresado por el usuario es valido ejecutamos la operación correspondiente
         const descuento = userCoupon.discount;
         const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
     
